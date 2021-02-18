@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "project_name": "Random Quote Generator",
+      "description": "An app to generate random quote every 10 seconds or when button is clicked.",
+      "technologies": ["HTML", "CSS", "JS"],
+      "live_link": "https://tpo-dburbine.github.io/techdegree-project-1/",
+      "github_link": "https://github.com/tpo-dburbine/techdegree-project-1",
+      "image_urls": ["Random_Quote_1.JPG", "Random_Quote_2.JPG"]
+    },
+    {
+      "id": 2,
+      "project_name": "Data Pagination",
+      "description": "A page that dynamically displays student information, with page buttons and a search bar, based on the data of 42 students",
+      "technologies": ["HTML", "JS"],
+      "live_link": "https://tpo-dburbine.github.io/TH02-Data-Pagination-and-Filtering/",
+      "github_link": "https://github.com/tpo-dburbine/TH02-Data-Pagination-and-Filtering",
+      "image_urls": ["Data_pagination_1.JPG", "Data_pagination_2.JPG"]
+    },
+    {
+      "id": 3,
+      "project_name": "Interactive Form",
+      "description": "A form for a user to fill out based on options given for a conference, includes field validation.",
+      "technologies": ["JS"],
+      "live_link": "https://tpo-dburbine.github.io/tpo-dburbine-project-3/",
+      "github_link": "https://github.com/tpo-dburbine/tpo-dburbine-project-3",
+      "image_urls": ["Interactive_form_1.JPG", "Interactive_form_2.JPG"]
+    },
+    {
+      "id": 4,
+      "project_name": "OOP Game Show",
+      "description": "A game app that generates random hidden phrase and lets user guess phrase before they run out of lives",
+      "technologies": ["HTML", "CSS", "JS"],
+      "live_link": "https://tpo-dburbine.github.io/tpo-dburbine-project-04/",
+      "github_link": "https://github.com/tpo-dburbine/tpo-dburbine-project-04",
+      "image_urls": ["Phrase_hunter_1.JPG", "Phrase_hunter_2.JPG"]
+    },
+    {
+      "id": 5,
+      "project_name": "Public API Request",
+      "description": "Parses a JSON file and displays employee contact information for a fictional startup",
+      "technologies": ["HTML", "CSS", "JS", "JSON", "AJAX"],
+      "live_link": "https://tpo-dburbine.github.io/tpo-dburbine-project-05/",
+      "github_link": "https://github.com/tpo-dburbine/tpo-dburbine-project-05",
+      "image_urls": ["Employee_directory_1.JPG", "Employee_directory_2.JPG"]
+    }
+  ]
+}
