@@ -18,19 +18,36 @@ app.get('/about', (req, res) => {
   res.render('about')
 })
 
-app.get('/project/:id', (req, res) => {
+app.get('/project/:id', (req, res, next) => {
   const projectIndex = global.parseInt(req.params.id) - 1
 
-  res.render('project', projects.projects[projectIndex])
+  // Conditional to check if project route exists; presents 404 error if not
+  if (projects.projects[projectIndex] !== undefined) {
+    res.render('project', projects.projects[projectIndex])
+  } else {
+    const err = new Error()
+    err.status = 404
+    err.message = 'The page you are looking for does not exist'
+    next(err)
+  }
 })
 
-// Error Handler
+// Error Handlers
 app.use((req, res, next) => {
   const err = new Error()
   err.status = 404
-  err.message = 'This page does not exist, try going back!'
-  console.log('This page does not exist')
+  err.message = 'That page does not exist, please go back'
+  console.log('404 error handler called')
   next(err)
+})
+
+app.use((err, req, res, next) => {
+  if (err.status === 404) {
+    res.render('not-found', { err })
+  } else {
+    err.messsage = err.message || 'Looks like something went wrong with the server!'
+    res.status(err.status || 500).render('error', { err })
+  }
 })
 
 // App listener
